@@ -9,7 +9,7 @@
     <?php require 'public/blocks/header.php'; ?>
 
     <div class="conteiner main">
-      <h1>"Русский военный корабль, иди на х*й!"</h1>
+      <h1>"Русскій воєнний корабль, іді нах*й!"</h1>
       <h2>Мої роботи <a href="/contact">тут</a></h2>
       <div class="resume">
         <div class="pdf">
@@ -23,8 +23,5 @@
     <?php require 'public/blocks/footer.php'; ?>
 
     <script src="https://kit.fontawesome.com/efdec6ffc9.js" crossorigin="anonymous"></script>
-    <script src="/js/jquery3.6.0.js"></script>
-    <script src="/js/slick.js"></script>
-    <script src="/js/gallery.js"></script>
   </body>
 </html>

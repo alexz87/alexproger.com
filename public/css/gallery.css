@@ -35,3 +35,8 @@
 
 .gallery > .slider > .arrow-next {right: -50px}
 
+@media (max-width: 900px) {
+  .gallery > .slider > .div {
+    width: 50%!important;
+  }
+}

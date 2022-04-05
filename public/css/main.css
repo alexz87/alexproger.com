@@ -263,7 +263,7 @@ li {
 }
 
 .space {
-    height: 100px;
+    height: 200px!important;
 }
 
 footer {
@@ -331,10 +331,6 @@ footer {
 
     li {
         text-indent: 20px;
-    }
-
-    .space {
-        height: 50px;
     }
 
     footer > .tel {
