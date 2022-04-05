@@ -264,6 +264,7 @@ li {
 
 .space {
     height: 200px!important;
+    order: 99;
 }
 
 footer {
@@ -282,6 +283,10 @@ footer {
 }
 
 @media(max-width: 900px) {
+    body {
+        min-height: 800px!important;
+    }
+
     .conteiner {
         padding-left: 5%;
         padding-right: 5%;
