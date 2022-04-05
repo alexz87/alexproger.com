@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+:root {
+    --my-black: #333;
+    --my-white: #fff;
+    --my-red: #ff2800;
+    --my-blue: #0000ff;
+    --my-green: #008000;
+    --my-orange: #ff9900;
+    --my-gray: #ccc;
+    --bg-color: #272a2b; /* #295663; #344b5e;*/
+    --itp-red: #ff5644;
+    --all-shadow: 0px 7px 15px black;
+    --footer-shadow: 0px -7px 15px black;
+    --font-weight-normal: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+    --font-family-Montserrat: 'Montserrat', sans-serif;
+}

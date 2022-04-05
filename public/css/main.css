@@ -1,0 +1,351 @@
+@import url('/public/css/app.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: var(--Montserrat);
+    color: var(--my-orange);
+    /* жирность шрифта */
+    font-weight: 400;
+    height: 100vh;
+    background: url('/public/imgs/bg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* background: url('/public/img/bg.jpg'); */
+}
+
+img {
+    /* максимальная ширина картинок 100% */
+    max-width: 100%;
+}
+
+a {
+    color: var(--my-red);
+    /* подчеркивание ссылок */
+    text-decoration: none;
+    /* плавный переход при наведении */
+    transition: all 600ms ease;
+}
+
+a:hover {
+    color: var(--my-green);
+    transition: all 600ms ease;
+}
+
+.date {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* класс контейнер */
+.conteiner {
+    /* внутренний отступ слева */
+    padding-left: 15%;
+    /* внутренний отступ справа */
+    padding-right: 15%;
+    /* ширина */
+    width: 70%;
+}
+
+.main {
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* шапка сайта с классом топ-меню */
+header > .top-menu {
+    /* внутренний отступ снизу */
+    padding-bottom: 15px;
+    /* внутренний отступ сверху */
+    padding-top: 15px;
+    /* располажение на дисплее */
+    display: flex;
+    /* элементы будут растянуты на всю ширину блока */
+    justify-content: space-between;
+    background: var(--bg-color);
+    color: var(--my-orange);
+    /* текст в верхнем регистре */
+    text-transform: uppercase;
+    box-shadow: var(--all-shadow);
+}
+
+/* обращение к лого */
+header > .top-menu > .logo img {
+    /* ширина лого 150 пикселей */
+     width: 25px;
+     /* текст будет наезжать на лого слева */
+     float: left;
+     margin-bottom: 5px;
+     margin-right: 10px;
+}
+
+/* обращение к спан */
+header > .top-menu > .logo span {
+    float: left;
+    /* font-size: 14px;
+    font-weight: 700; */
+    display: block;
+    width: 250px;
+    margin-top: 5px;
+}
+
+header > .top-menu > .logo a {
+    color: var(--my-orange);
+}
+
+header > .top-menu > .logo a:hover {
+    color: var(--my-gray);
+}
+
+header > .top-menu > .nav {
+    float: right;
+    margin-top: 7px;
+}
+
+/* шапка сайта с классом топ-меню и внутренним классом ссылок нав */
+header > .top-menu > .nav a {
+    color: var(--my-orange);
+    margin-left: 10px;
+}
+
+/* шапка сайта с классом топ-меню и внутренним классом ссылок нав при наведении */
+header > .top-menu > .nav a:hover {
+    color: var(--my-gray);
+}
+
+/* обращение ко всем елементам кроме последнего :: добавление после каждого елемента */
+header > .top-menu > .nav a:not(:last-of-type)::after {
+    /* елемент который добавляем после елементов */
+    content: '|';
+    margin-left: 10px;
+    color: var(--my-orange);
+}
+
+.resume {
+    margin-top: 10px;
+    /* margin-bottom: 300px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 620px;
+    height: 877px;
+    border: 2px solid var(--bg-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: var(--all-shadow);
+    transition: all 600ms ease;
+    background: var(--my-white);
+}
+
+/* .resume:hover {
+    transition: all 600ms ease;
+    увеличение на 5% и подъем в верх
+    transform: scale(1.05) translateY(-5px);
+    тень (1 по горизонтали, 2 по вертикали, 3 размытие, 4 распространение, 5 цвет + прозрачность '.')
+    box-shadow: var(--all-shadow);
+    color: var(--bg-color);
+} */
+
+.resume > .pdf {
+    position: absolute;
+    margin-left: 50%;
+    text-align: center;
+    padding-top: 12px;
+    background: var(--bg-color);
+    width: 120px;
+    height: 30px;
+    border-radius: 7px;
+    transition: all 600ms ease;
+    box-shadow: var(--all-shadow);
+}
+
+.resume > .pdf:hover {
+    border: 1px solid var(--my-green);
+    transition: all 600ms ease;
+    transform: scale(1.05) translateY(-5px);
+}
+
+.resume > .pdf > a {
+    color: var(--my-orange);
+}
+
+.resume > .pdf > a:hover {
+    color: var(--my-green);
+}
+
+/* обращение к кнопкам с классом бтн */
+.btn {
+    width: 150px;
+    /* высота */
+    height: 40px;
+    margin-bottom: 10px;
+    background: var(--bg-color);
+    /* закругление углов */
+    border-radius: 5px;
+    /* обводка */
+    border: 0;
+    font-size: 14px;
+    color: var(--my-orange);
+    /* при наведении мышка станет указательным пальцем */
+    cursor: pointer;
+    transition: all 600ms ease;
+    box-shadow: var(--all-shadow);
+}
+
+.btn:hover {
+    transition: all 600ms ease;
+    /* увеличение на 5% и подъем в верх */
+    transform: scale(1.05) translateY(-5px);
+    /* тень (1 по горизонтали, 2 по вертикали, 3 размытие, 4 распространение, 5 цвет + прозрачность '.') */
+    box-shadow: var(--all-shadow);
+    color: var(--my-green);
+}
+
+.user-info {
+    width: 27%;
+    margin-top: 100px;
+    float: left;
+}
+
+#photo {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid var(--my-orange);
+    margin-bottom: 10px;
+    box-shadow: var(--all-shadow);
+}
+
+.upload > input {
+    margin-bottom: 5px;
+}
+
+.redit-info {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float: left;
+}
+
+.users {
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float: right;
+    padding: 10px;
+    text-align: left;
+}
+
+.users > h2, h3, hr {
+    margin-bottom: 10px;
+}
+
+.users > h3 {
+    color: var(--my-red);
+}
+
+#back {
+    margin-bottom: 10px;
+    margin-left: 0;
+    background: var(--my-red);
+    color: var(--my-white);
+    box-shadow: var(--all-shadow);
+}
+
+li {
+    text-indent: 50px;
+    list-style-type: none;
+}
+
+.space {
+    height: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+    color: var(--my-orange);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: var(--footer-shadow);
+}
+
+@media(max-width: 900px) {
+    .conteiner {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+
+    header > .top-menu > .logo {
+        margin-top: 7px;
+    }
+
+    header > .top-menu > .logo span {
+        float: right;
+        display: block;
+        width: 200px;
+        margin-top: 5px;
+    }
+
+    header > .top-menu > .nav a:not(:last-of-type)::after {
+        content: none;
+    }
+
+    .resume {
+        width: 80%;
+        height: 60vh;
+    }
+
+    .resume > .pdf {
+        margin-left: 45%;
+    }
+
+    .user-info {
+        width: 90%;
+        margin-top: 50px;
+        float: left;
+    }
+
+    .redit-info {
+        margin-top: 20px;
+    }
+    
+    .users {
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        float: left;
+    }
+
+    li {
+        text-indent: 20px;
+    }
+
+    .space {
+        height: 50px;
+    }
+
+    footer > .tel {
+        color: var(--my-orange);
+    }
+
+    footer > .tel:hover {
+        color: var(--my-red);
+    }
+
+    footer {
+        position: fixed;
+    }
+}
