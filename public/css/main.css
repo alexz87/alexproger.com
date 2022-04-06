@@ -16,8 +16,7 @@ body {
     background: url('/public/imgs/bg.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-
-    /* background: url('/public/img/bg.jpg'); */
+    min-height: 800px!important;
 }
 
 img {
@@ -263,7 +262,7 @@ li {
 }
 
 .space {
-    height: 200px!important;
+    min-height: 300px!important;
     order: 99;
 }
 
