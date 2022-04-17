@@ -282,6 +282,8 @@ footer {
     padding-bottom: 20px;
     box-shadow: var(--footer-shadow);
 }
+footer > .fa-phone,
+footer > .tel {margin-right: 3px}
 
 /* * * OLX * * */
 
@@ -377,8 +379,7 @@ footer {
 
     li {text-indent: 20px}
 
-    footer > .tel {color: var(--my-orange)}
-    footer > .tel:hover {color: var(--my-red)}
+    footer > .tel {margin-top: 10px;}
     footer {position: fixed}
 }
 
