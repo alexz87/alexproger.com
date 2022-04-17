@@ -77,11 +77,11 @@ header > .top-menu {
 /* обращение к лого */
 header > .top-menu > .logo img {
     /* ширина лого 150 пикселей */
-     width: 25px;
-     /* текст будет наезжать на лого слева */
-     float: left;
-     margin-bottom: 5px;
-     margin-right: 10px;
+    width: 25px;
+    /* текст будет наезжать на лого слева */
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 /* обращение к спан */
@@ -90,7 +90,7 @@ header > .top-menu > .logo span {
     /* font-size: 14px;
     font-weight: 700; */
     display: block;
-    width: 250px;
+    width: 150px!important;
     margin-top: 5px;
 }
 
@@ -140,6 +140,7 @@ header > .top-menu > .nav a:not(:last-of-type)::after {
     box-shadow: var(--all-shadow);
     transition: all 600ms ease;
     background: var(--my-white);
+    animation: pdf 2s ease-in-out infinite;
 }
 
 /* .resume:hover {
@@ -151,9 +152,10 @@ header > .top-menu > .nav a:not(:last-of-type)::after {
     color: var(--bg-color);
 } */
 
-.resume > .pdf {
+.pdf {
     position: absolute;
-    margin-left: 50%;
+    top: 120px;
+    right: 50px;
     text-align: center;
     padding-top: 12px;
     background: var(--bg-color);
@@ -164,17 +166,17 @@ header > .top-menu > .nav a:not(:last-of-type)::after {
     box-shadow: var(--all-shadow);
 }
 
-.resume > .pdf:hover {
+.pdf:hover {
     border: 1px solid var(--my-green);
     transition: all 600ms ease;
     transform: scale(1.05) translateY(-5px);
 }
 
-.resume > .pdf > a {
+.pdf > a {
     color: var(--my-orange);
 }
 
-.resume > .pdf > a:hover {
+.pdf > a:hover {
     color: var(--my-green);
 }
 
@@ -281,10 +283,61 @@ footer {
     box-shadow: var(--footer-shadow);
 }
 
+/* * * OLX * * */
+
+.o, .l, .x {
+    font-family: 'Archivo Black', sans-serif!important;
+    color: #23e5db;
+}
+.olx-box {
+    display: flex!important;
+    align-items: center!important;
+    font-weight: 400!important;
+    position: absolute!important;
+    top: 30px!important;
+    right: 30px!important;
+}
+.olx-link {
+    display: flex!important;
+    align-items: center!important;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background: #333;
+    justify-content: center;
+}
+.olx-link:hover {
+    background: #23e5db;
+    border: 2px solid #333;
+    box-shadow: 0px 0px 20px 10px #23e5db;
+}
+.olx-link:hover > .o, .olx-link:hover > .l, .olx-link:hover > .x {color: #333}
+.o {
+    margin-right: -3px;
+    font-size: 50px;
+    animation: bell 2s ease infinite!important;
+}
+.l {
+    margin-right: -3px;
+    font-size: 60px;
+    animation: bell 2s ease 300ms infinite!important;
+}
+.x {
+    font-size: 30px;
+    animation: bell 2s ease 600ms infinite!important;
+}
+
+
+/* * * @media * * */
 @media(max-width: 900px) {
-    body {
-        min-height: 800px!important;
+    body {min-height: 800px!important}
+
+    .olx-link:hover {
+        background: #333;
+        border: 0;
+        box-shadow: none;
     }
+    .olx-link:hover > .o, .olx-link:hover > .l, .olx-link:hover > .x {color: #23e5db}
 
     .conteiner {
         padding-left: 5%;
@@ -292,28 +345,19 @@ footer {
         width: 90%;
     }
 
-    header > .top-menu > .logo {
-        margin-top: 7px;
-    }
-
+    header > .top-menu > .logo {margin-top: 7px}
     header > .top-menu > .logo span {
         float: right;
         display: block;
-        width: 200px;
         margin-top: 5px;
     }
 
-    header > .top-menu > .nav a:not(:last-of-type)::after {
-        content: none;
-    }
+    header > .top-menu > .nav a:not(:last-of-type)::after {content: none}
 
     .resume {
         width: 80%;
         height: 60vh;
-    }
-
-    .resume > .pdf {
-        margin-left: 45%;
+        margin-top: 100px;
     }
 
     .user-info {
@@ -322,9 +366,7 @@ footer {
         float: left;
     }
 
-    .redit-info {
-        margin-top: 20px;
-    }
+    .redit-info {margin-top: 20px}
     
     .users {
         width: 90%;
@@ -333,19 +375,26 @@ footer {
         float: left;
     }
 
-    li {
-        text-indent: 20px;
-    }
+    li {text-indent: 20px}
 
-    footer > .tel {
-        color: var(--my-orange);
-    }
+    footer > .tel {color: var(--my-orange)}
+    footer > .tel:hover {color: var(--my-red)}
+    footer {position: fixed}
+}
 
-    footer > .tel:hover {
-        color: var(--my-red);
-    }
-
+@media(max-width: 380px) {
     footer {
-        position: fixed;
+        display: block;
+        text-align: center;
     }
+
+    .o {
+        font-size: 30px;
+        margin-right: -2px;
+    }
+    .l {
+        font-size: 40px;
+        margin-right: -2px;
+    }
+    .x {font-size: 20px}
 }

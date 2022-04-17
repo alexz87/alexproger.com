@@ -39,4 +39,7 @@
   .gallery > .slider > .div {
     width: 50%!important;
   }
+
+  .gallery > .slider > .arrow-prev,
+  .gallery > .slider > .arrow-next {display: none}
 }

@@ -9,14 +9,21 @@
     <?php require 'public/blocks/header.php'; ?>
 
     <div class="conteiner main">
-      <h1>"Русскій воєнний корабль, іді нах*й!"</h1>
-      <h2>Мої роботи <a href="/contact">тут</a></h2>
-      <div class="resume">
-        <div class="pdf">
-          <a href="/public/files/resume.pdf" download>Скачати резюме</a>
+        <h1>"Русскій воєнний корабль, іді нах*й!"</h1>
+        <!-- <h2>Мої роботи <a href="/contact">тут</a></h2> -->
+        <!-- <div class="pdf">
+            <a href="/public/files/resume.pdf" download>Скачати резюме</a>
+        </div> -->
+        <div class="resume">
+            <div class="olx-box">
+                <a href="https://www.olx.ua/d/uk/obyavlenie/sayt-pd-klyuch-IDOqRCz.html" class="olx-link">
+                    <span class="o">O</span>
+                    <span class="l">l</span>
+                    <span class="x">X</span>
+                </a>
+            </div>
+            <a href="/public/files/resume.pdf" download><img class="img-resume" src="/public/imgs/resume.jpg"></a>
         </div>
-        <img src="/public/imgs/resume.jpg">
-      </div>
     </div>
     <div class="space"></div>
 
