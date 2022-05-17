@@ -15,7 +15,7 @@
                     <p>Мій email: <a href="mailto:admin@alexproger.com">admin@alexproger.com</a></p><br>
                     <hr>
                     <p>BackEnd розробник!</p>
-                    <p>Мій диплом: <a href="https://goo.su/bFOZ" target="_blank">посилання</a></p></br>
+                    <p>Мій диплом: <a href="https://itproger.com/view-diplom/4216fe8a6cb36b420699962fabfd2b5d/back-end" target="_blank">посилання</a></p></br>
                     <p>Мої работи:</p>
                     <ul>
                         <li>завантажити: <a href="/public/files/Articles.zip" download>"Статті"</a></li>
@@ -24,7 +24,7 @@
                     </ul><br>
                     <hr>
                     <p>FrontEnd розробник!</p>
-                    <p>Мій диплом: <a href="https://goo.su/HIc2V8" target="_blank">посилання</a></p></br>
+                    <p>Мій диплом: <a href="https://itproger.com/view-diplom/4216fe8a6cb36b420699962fabfd2b5d" target="_blank">посилання</a></p></br>
                     <p>Мої работи:</p>
                     <ul>
                         <li>завантажити: <a href="/public/files/Music.zip" download>"Music"</a></li>
