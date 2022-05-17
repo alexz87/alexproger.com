@@ -6,7 +6,7 @@
 
         public static function getInstence() {
             if (self::$_db == null) {
-                self::$_db = new PDO('mysql:host=re448556.mysql.tools;dbname=re448556_nasty', 're448556_nasty', '7sRv)_5M5y');
+                self::$_db = new PDO('mysql:host=localhost;dbname=Nasty', 'root', 'root');
             }
 
             return self::$_db;
